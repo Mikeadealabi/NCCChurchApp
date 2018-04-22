@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NCCChurchApp.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(NccDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

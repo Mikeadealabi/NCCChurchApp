@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NCCChurchApp.Models;
 
 namespace NCCChurchApp.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class NccDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public NccDbContext(DbContextOptions<NccDbContext> options)
             : base(options)
         {
         }
